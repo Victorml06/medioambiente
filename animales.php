@@ -1,27 +1,3 @@
-<?php
-
-$conciencia = array(
-    0=>"Mucho",
-    1=>"Poco",
-    2=>"Nada",
-    3=>"Muchisimo"
-);
-
-$gustos = array(
-    0=>"Animales",
-    1=>"Paises",
-    2=>"Desastres naturales",
-    3=>"Informacion general"
-);
-
-$genero = array(
-    0=>"Masculino",
-    1=>"Femenino",
-    2=>"Otro"
-);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -110,8 +86,26 @@ $genero = array(
                         <option value="otro">Otro</option>
                     </select><br><br>
 
-                    <label for="">Elige una de las opciones:</label>
-                    <br>
+                    <label>¿Cuál es tu forma preferida de ayudar al medio ambiente?</label><br>
+                    <input type="radio" id="reciclar" name="ayuda" value="reciclar">
+                    <label for="reciclar">Reciclar</label><br>
+                    <input type="radio" id="plantar" name="ayuda" value="plantar">
+                    <label for="plantar">Plantar árboles</label><br>
+                    <input type="radio" id="ahorrar" name="ayuda" value="ahorrar">
+                    <label for="ahorrar">Ahorrar energía</label><br><br>
+
+                    <label>Selecciona las acciones que ya realizas:</label><br>
+                    <input type="checkbox" id="usarBolsas" name="acciones[]" value="usarBolsas">
+                    <label for="usarBolsas">Uso bolsas reutilizables</label><br>
+                    <input type="checkbox" id="transportepublico" name="acciones[]" value="transportepublico">
+                    <label for="transportepublico">Uso transporte público</label><br>
+                    <input type="checkbox" id="reducirAgua" name="acciones[]" value="reducirAgua">
+                    <label for="reducirAgua">Reduzco el consumo de agua</label><br><br>
+
+                    <input type="checkbox" id="terminos" name="terminos" value="aceptado" required>
+                    <label for="terminos">Acepto los términos y condiciones</label><br><br>
+
+                    <input type="submit" value="Enviar">
                 </form>
             </div>
         
